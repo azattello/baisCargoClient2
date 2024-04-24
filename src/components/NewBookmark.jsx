@@ -18,7 +18,7 @@ const NewBookmark = ({ notFoundBookmarks}) => {
         const confirmDelete = window.confirm("Вы уверены, что хотите удалить эту закладку?");
         if (confirmDelete) {
             try {
-                const response = await fetch(`http://bais-cargo.kz:3001/api/bookmark/${userId}/delete/${trackNumber}`, {
+                const response = await fetch(`https://bais-cargo.kz:3001/api/bookmark/${userId}/delete/${trackNumber}`, {
                     method: 'DELETE',
                 });
 

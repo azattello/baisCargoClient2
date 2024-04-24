@@ -20,7 +20,7 @@ const TrackList = () => {
     useEffect(() => {
         const fetchTracks = async () => {
             try {
-                const response = await axios.get('http://bais-cargo.kz:3001/api/track/tracks', {
+                const response = await axios.get('https://bais-cargo.kz:3001/api/track/tracks', {
                     params: {
                         page: currentPage,
                         limit: perPage

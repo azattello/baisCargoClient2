@@ -3,7 +3,7 @@ import axios from 'axios';
 export const addFilial = async (filialText, userPhone) => {
   try {
     // Отправляем POST запрос на сервер для добавления нового филиала
-    const response = await axios.post('http://bais-cargo.kz:3001/api/filial/addFilial', {
+    const response = await axios.post('https://bais-cargo.kz:3001/api/filial/addFilial', {
       filialText,
       userPhone
     });

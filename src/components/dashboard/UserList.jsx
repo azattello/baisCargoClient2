@@ -12,7 +12,7 @@ const UserList = () => {
         useEffect(() => {
             const fetchUsers = async () => {
                 try {
-                    const response = await axios.get('http://bais-cargo.kz:3001/api/user/users', {
+                    const response = await axios.get('https://bais-cargo.kz:3001/api/user/users', {
                         params: {
                             page: currentPage,
                             limit: perPage

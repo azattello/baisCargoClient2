@@ -28,7 +28,7 @@ export const addTrack = async (track, status, date) => {
 export const excelTracks = async (tracks, status, date) => {
   try {
       // Отправляем POST запрос на сервер для обновления треков
-      const response = await axios.post('http://bais-cargo.kz:3001/api/track/addExcelTrack', {
+      const response = await axios.post('https://bais-cargo.kz:3001/api/track/addExcelTrack', {
           tracks,
           status,
           date

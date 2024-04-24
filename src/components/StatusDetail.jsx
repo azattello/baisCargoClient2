@@ -21,7 +21,7 @@ const StatusDetail = ({ statusId, updatedBookmarks, statusText}) => {
     const sendArchiveRequest = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://bais-cargo.kz:3001/api/archive/${userId}/archive`, {
+            const response = await fetch(`https://bais-cargo.kz:3001/api/archive/${userId}/archive`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -4,7 +4,7 @@ export const addStatus = async (statusText) => {
     
   try {
     // Отправляем запрос на сервер для добавления нового статуса
-    const response = await axios.post('http://bais-cargo.kz:3001/api/status/addStatus', {
+    const response = await axios.post('https://bais-cargo.kz:3001/api/status/addStatus', {
       statusText
     });
     

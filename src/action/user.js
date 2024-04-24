@@ -65,7 +65,7 @@ export const login =  (phone, password) => {
 export const auth =  () => {
     return async dispatch => {
         try {
-            const response = await axios.get(`http://bais-cargo.kz:3001/api/auth/auth`, 
+            const response = await axios.get(`https://bais-cargo.kz:3001/api/auth/auth`, 
                 {headers:{Authorization: `Bearer ${localStorage.getItem('token')}`}}
             )
             dispatch(setUser(response.data.user))

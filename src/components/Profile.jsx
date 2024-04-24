@@ -28,7 +28,7 @@ const Profile = () => {
         const fetchUserProfile = async () => {
             try {
                 // Отправляем GET запрос на сервер для получения данных профиля
-                const response = await fetch('http://bais-cargo.kz:3001/api/auth/profile', {
+                const response = await fetch('https://bais-cargo.kz:3001/api/auth/profile', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}` // Передаем токен в заголовке запроса

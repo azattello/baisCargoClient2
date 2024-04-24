@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const addBookmark = async ( userId , description, trackNumber) => {
 
-    const apiUrl = `http://bais-cargo.kz:3001/api/bookmark/${userId}/bookmarks`;
+    const apiUrl = `https://bais-cargo.kz:3001/api/bookmark/${userId}/bookmarks`;
 
     const data = {
         description,

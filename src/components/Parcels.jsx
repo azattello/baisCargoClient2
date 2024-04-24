@@ -39,7 +39,7 @@ const Parcels = () => {
     useEffect(() => {
         const fetchBookmarks = async () => {
             try {
-                const response = await axios.get(`http://bais-cargo.kz:3001/api/bookmark/${userId}/getBookmarks`);
+                const response = await axios.get(`https://bais-cargo.kz:3001/api/bookmark/${userId}/getBookmarks`);
                 const { notFoundBookmarks, updatedBookmarks } = response.data;
                 setNotFoundBookmarks(notFoundBookmarks);
                 setUpdatedBookmarks(updatedBookmarks);
